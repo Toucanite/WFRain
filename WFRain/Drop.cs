@@ -71,7 +71,7 @@ namespace WFRain
             if (!Stopped)
                 location = new PointF(  initialLocation.X + horizontalSpeed * (float)(sw.ElapsedMilliseconds / 1000.0f),
                                         initialLocation.Y + verticalSpeed * (float)(sw.ElapsedMilliseconds / 1000.0f));
-            e.Graphics.DrawLine(Pens.RosyBrown, start, end);
+            //e.Graphics.DrawLine(Pens.RosyBrown, start, end);
 
             e.Graphics.FillEllipse(Brushes.Blue, new Rectangle(Point.Round(location), size));
             e.Graphics.DrawEllipse(Pens.Red, new Rectangle(Point.Round(location), size));
